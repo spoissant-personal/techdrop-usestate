@@ -7,7 +7,7 @@ const getInitialState = () => {
 };
 
 const LemonadeStand1 = () => {
-  // 1
+  // 2
   const [state, setState] = useState(getInitialState());
 
   const lemonadeSold = (withLemonSlice) => {
@@ -33,7 +33,7 @@ const LemonadeStand1 = () => {
 
   const { money, lemonSlices } = state;
 
-  // 2
+  // 1
   console.log("Rendering...");
   return (
     <div>
