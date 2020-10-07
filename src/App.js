@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import LemonadeStand0 from './LemonadeStand0'
+import LemonadeStand1 from './LemonadeStand1'
+import LemonadeStand2 from './LemonadeStand2'
+import LemonadeStand3 from './LemonadeStand3'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LemonadeStand0 />
+      {/* <LemonadeStand1 /> */}
+      {/* <LemonadeStand2 /> */}
+      {/* <LemonadeStand3 /> */}
     </div>
   );
 }
