@@ -7,7 +7,7 @@ const getInitialState = () => {
 };
 
 const LemonadeStand1 = () => {
-  // 2
+  // 1
   const [state, setState] = useState(getInitialState());
 
   const lemonadeSold = (withLemonSlice) => {
@@ -33,20 +33,23 @@ const LemonadeStand1 = () => {
 
   const { money, lemonSlices } = state;
 
-  // 1
+  // 2
   console.log("Rendering...");
   return (
     <div>
       <h1>Simon's Super Lemonade Stand</h1>
       <h2>Menu</h2>
-      <h3>Lemonade - 1$</h3>
-      {lemonSlices > 0 && <h4>Fresh Lemon slice - Add 1$</h4>}
+      <p>Lemonade (1$)</p>
+      <p>...with Fresh Lemon slice (+1$)</p>
+      <h2>Stand</h2>
       <p>My Money: {money}$</p>
-      <button onClick={() => lemonadeSold(false)}>Cheap Lemonade sold</button>
+      <p>Lemon Slices: {lemonSlices}</p>
+      <h2>Sales</h2>
+      <button onClick={() => lemonadeSold(false)}>Cheap Lemonade sold!</button>
       <br />
       {lemonSlices > 0 && (
         <button onClick={() => lemonadeSold(true)}>
-          Lemonade with Lemon Slice sold! ({lemonSlices} remaining!)
+          Lemonade with Lemon Slice sold!
         </button>
       )}
     </div>
